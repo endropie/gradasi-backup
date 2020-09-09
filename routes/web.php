@@ -1,5 +1,6 @@
 <?php
 
+use Endropie\AccurateClient\Facade as Accurate;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Accurate::routes();
+
+Route::get('/sales-invoice/sync', 'AccurateSalesInvoiceController@sync');

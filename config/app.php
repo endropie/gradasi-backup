@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
 
+        Endropie\AccurateClient\AccurateProvider::class,
+
         /*
          * Application Service Providers...
          */
